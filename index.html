@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myresi.id</title>
+      <!-- TODO add manifest here -->
+      <link rel="manifest" href="manifest.json">
+      <!-- Sets initial viewport load and disables zooming  -->
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <!-- Include the compiled Ratchet CSS -->
+      <link href="css/ratchet.css" rel="stylesheet">
+      <!-- Include the compiled Ratchet JS -->
+      <script src="js/ratchet.js"></script>
+   </head>
+   <body>
+      <!-- Make sure all your bars are the first things in your <body> -->
+      <header class="bar bar-nav">
+         <h1 class="title">Myresi</h1>
+      </header>
+      <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+      <div class="content-padded">
+         <form style="margin-top: 60px;">
+            <input id="txtResi" type="text" placeholder="Masukan resi kamu">
+            <button type="button" id="btnCek" class="btn btn-positive btn-block">Tampilkan</button>
+         </form>
+         <form class="input-group" style="margin-top: 20px;">
+            <div class="input-row">
+               <label>No Resi</label>
+               <input type="text" id="vResi" disabled>
+            </div>
+            <div class="input-row">
+               <label>Status</label>
+               <input type="email" id="vStatus" disabled>
+            </div>
+            <div class="input-row">
+               <label>Service</label>
+               <input type="text" id="vService" disabled>
+            </div>
+            <div class="input-row">
+               <label>Tanggal</label>
+               <input type="text" id="vTanggalDikirim" disabled>
+            </div>
+            <div class="input-row">
+               <label>Dikirim oleh</label>
+               <input type="text" id="vDikirimOleh" disabled>
+            </div>
+            <div class="input-row">
+               <label>Dikirim ke</label>
+               <input type="text" id="vDikirimKe" disabled>
+            </div>
+         </form>
+      </div>
+      <script src="js/app.js" async></script>
+   </body>
+</html>
